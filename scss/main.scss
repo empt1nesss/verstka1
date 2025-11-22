@@ -1,0 +1,58 @@
+#all-furniture {
+  .tab-content {
+    .tab-pane {
+      justify-content: center;
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(250px * 10); /* ширина всех логотипов */
+  animation: scroll 20s linear infinite;
+
+  .col-auto img {
+    width: 100%;
+  }
+}
+
+.logo-track img {
+  width: 250px;
+  padding: 0 20px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+#about {
+  .accordion {
+    .accordion-item {
+      width: 100%;
+    }
+  }
+}
+
+nav {
+  #mainNav {
+    #__icons__ {
+        display: none !important;
+      @media (max-width: 768px) {
+        display: none !important;
+      }
+    }
+  }
+}

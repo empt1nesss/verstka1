@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DudeShape</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<nav class="navbar navbar-expand-lg bg-white py-3">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-3 text-teal" href="#">DudeShape</a>
+
+    <!-- Burger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-4">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div id="__icons__" class="d-flex align-items-center gap-3">
+        <img src="./assets/loupe 1.svg" class="img-fluid" style="width:28px;">
+        <img src="./assets/menu 1.svg" class="img-fluid" style="width:28px;">
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= HOME SECTION ================= -->
+<section id="home" class="bg-teal text-black">
+  <div class="container py-5">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <img src="./assets/home-pic.png" class="img-fluid w-100">
+      </div>
+
+      <div class="col-lg-6 p-5">
+        <h2 class="fw-bold display-4 mb-3">We Help You Make Modern Furniture</h2>
+        <p class="fs-5 mb-4 bs-black">
+          All of our furniture uses the best materials and choices for our customers.
+        </p>
+        <button class="btn btn-light text-teal px-4 py-3 fs-5">Explore More</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-5">
+  <div class="container">
+
+    <!-- trusted logos -->
+    <div class="text-center mb-5 logo-slider">
+      <h3 class="fw-bold text-teal fs-2">Trusted by 20,000+ companies</h3>
+
+      <div class="row justify-content-center mt-4 g-5 logo-track">
+        <div class="col-auto"><img src="./assets/mastercard.svg"></div>
+        <div class="col-auto"><img src="./assets/airbnb.svg"></div>
+        <div class="col-auto"><img src="./assets/uber.svg"></div>
+        <div class="col-auto"><img src="./assets/paypal.svg"></div>
+        <div class="col-auto"><img src="./assets/visa.svg"></div>
+        <div class="col-auto"><img src="./assets/stripe.svg"></div>
+      </div>
+    </div>
+
+    <!-- about content -->
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <img src="./assets/about-pic.png" class="img-fluid w-100">
+      </div>
+
+      <div class="col-lg-6 accordion" id="faqAccordion">
+        <h3 class="text-teal fw-bold fs-2 mb-3">About Us</h3>
+        <p class="text-muted fs-5 mb-4">
+          All of our furniture uses the best materials and choices for our customers.
+        </p>
+
+        <!-- points -->
+        <div class="d-flex gap-4 mb-4">
+          <img src="./assets/shield.svg">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="fw-bold accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">Best Quality</h4>
+            </div>
+            <div id="item1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <p class="text-muted accordion-body">All of our furniture uses the best materials and choices</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-4 mb-4">
+          <img src="./assets/success.svg">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="fw-bold accordion-button" data-bs-toggle="collapse" data-bs-target="#item2">Best Quality</h4>
+            </div>
+            <div id="item2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <p class="text-muted accordion-body">All of our furniture uses the best materials and choices</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-4 mb-4">
+          <img src="./assets/ship.svg">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="fw-bold accordion-button" data-bs-toggle="collapse" data-bs-target="#item3">Best Quality</h4>
+            </div>
+            <div id="item3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <p class="text-muted accordion-body">All of our furniture uses the best materials and choices</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= POPULAR FURNITURE ================= -->
+<section class="py-5">
+  <div class="container">
+
+    <h3 class="text-teal fw-bold fs-2 mb-3">Our Popular Furniture</h3>
+
+    <p class="col-lg-6 text-muted mb-5">
+      All of our furniture uses the best materials and choices for our customers.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- card -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="./assets/popular-furniture-1.png" class="card-img-top">
+          <div class="card-body">
+            <h4 class="fw-bold">White Swan Chair</h4>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="fw-bold mb-0">$40</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copy 2 more cards -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="./assets/popular-furniture-2.png" class="card-img-top">
+          <div class="card-body">
+            <h4 class="fw-bold">White Swan Chair</h4>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold mb-0">$40</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="./assets/popular-furniture-3.png" class="card-img-top">
+          <div class="card-body">
+            <h4 class="fw-bold">White Swan Chair</h4>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold mb-0">$40</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- All Furniture -->
+<section id="all-furniture" class="container my-5">
+
+  <h3 class="text-center mb-4">All Furniture</h3>
+
+  <!-- Tabs navigation -->
+  <ul class="nav nav-tabs justify-content-center mb-4 border-0">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#shop-room">Shop By Room</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#shop-category">Shop By Category</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#shop-style">Shop By Style</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane fade show active" id="shop-room">      
+      <img src="./assets/popular-furniture-1.png" class="img-fluid rounded shadow mx-auto d-block" alt="">
+    </div>
+    <div class="tab-pane fade" id="shop-category">
+      <img src="./assets/popular-furniture-2.png" class="img-fluid rounded shadow mx-auto d-block" alt="">
+    </div>
+    <div class="tab-pane fade" id="shop-style">
+      <img src="./assets/popular-furniture-3.png" class="img-fluid rounded shadow mx-auto d-block" alt="">
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEW SECTION -->
+<section id="furniture-review" class="container my-5">
+  <div class="row align-items-center g-5">
+    <div class="col-md-6">
+      <img src="./assets/reviews-pic.png" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-6">
+      <h3>Our customers are verry important to us</h3>
+      <p class="text-muted">
+        All of our furniture uses the best materials and choices for our customers.
+        All of our furniture uses the best materials and choices for our customers.
+      </p>
+
+      <div class="d-flex align-items-center mt-4">
+        <img src="./assets/profile-pic.png" class="rounded-circle me-3" alt="">
+        <div>
+          <h4 class="mb-0">Mh Jibon</h4>
+          <div class="d-flex align-items-center">
+            <img src="./assets/star.svg" class="me-2" alt="">
+            <p class="mb-0 fw-bold">4.8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="w-100 py-5" style="background:#F2F6F4">
+  <div class="container text-center">
+    <h3 class="mb-3">Subscribe to get the latest news about us</h3>
+    <p class="mb-4 text-muted">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.
+    </p>
+
+    <form class="row justify-content-center g-2">
+      <div class="col-md-4 col-sm-8">
+        <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <button class="btn btn-dark w-100 btn-lg">Register</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-light py-5 mt-5">
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-md-3">
+        <h3>DudeShape</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h5>Follow us:</h5>
+        <div class="d-flex gap-3">
+          <img src="./assets/facebook.svg">
+          <img src="./assets/twitter.svg">
+          <img src="./assets/instagram.svg">
+          <img src="./assets/youtube.svg">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Take a tour</h3>
+        <a href="#" class="d-block">Features</a>
+        <a href="#" class="d-block">Pricing</a>
+        <a href="#" class="d-block">Product</a>
+        <a href="#" class="d-block">Support</a>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Our company</h3>
+        <a href="#" class="d-block">About Us</a>
+        <a href="#" class="d-block">Blog</a>
+        <a href="#" class="d-block">Media</a>
+        <a href="#" class="d-block">Contact Us</a>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Subscribe</h3>
+        <p>Subscribe to get the latest news</p>
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <button class="btn btn-primary w-100">Subscribe</button>
+      </div>
+
+    </div>
+
+    <p class="text-center text-muted mt-5">© 2021. Crafted with love.</p>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
